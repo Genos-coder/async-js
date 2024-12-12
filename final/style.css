@@ -1,0 +1,48 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    background-image: linear-gradient(to right , red, rgb(111, 0, 190),rgb(181, 0, 181));
+    font-size: clamp(1.5rem, 5vw,4rem);
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+}
+
+.cursor{
+    font-size: clamp(1.3rem, 3vw,2.5rem);
+    margin-left: 0.1rem;
+    background-color: black;
+    animation: fade 0.9s ease-in-out infinite;
+}
+
+@keyframes fade {
+    0%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
